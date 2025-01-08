@@ -1,7 +1,0 @@
-D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\Definitions.IndirectTexture.h
-D:\UE4_IndirectTexture\IndirectTexture\Source\IndirectTexture\IndirectTextureGameModeBase.h
-C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Inc\IndirectTexture\IndirectTextureGameModeBase.generated.h
