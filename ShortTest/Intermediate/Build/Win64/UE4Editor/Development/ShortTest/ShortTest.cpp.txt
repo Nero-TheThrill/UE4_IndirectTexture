@@ -1,0 +1,2 @@
+D:\UE4_IndirectTexture\ShortTest\Intermediate\Build\Win64\UE4Editor\Development\ShortTest\Definitions.ShortTest.h
+D:\UE4_IndirectTexture\ShortTest\Source\ShortTest\ShortTest.h

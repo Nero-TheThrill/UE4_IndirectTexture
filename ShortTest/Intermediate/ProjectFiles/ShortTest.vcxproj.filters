@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ShortTest.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{71C710BC-33F0-4C41-AC9B-72AF4DC0F6CF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShortTest.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ShortTestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{7122EE20-F391-4849-9245-3803D0F84F6D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ShortTest">
+      <UniqueIdentifier>{52D3033B-5777-43C2-ABA4-5EDFEC5910E4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShortTest\ShortTest.Build.cs">
+      <Filter>Source\ShortTest</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ShortTest\ShortTest.cpp">
+      <Filter>Source\ShortTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShortTest\ShortTest.h">
+      <Filter>Source\ShortTest</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShortTest\ShortTestGameModeBase.cpp">
+      <Filter>Source\ShortTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShortTest\ShortTestGameModeBase.h">
+      <Filter>Source\ShortTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

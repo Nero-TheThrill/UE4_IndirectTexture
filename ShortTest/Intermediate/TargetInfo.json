@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ShortTest",
+			"Path": "D:\\UE4_IndirectTexture\\ShortTest\\Source\\ShortTest.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ShortTestEditor",
+			"Path": "D:\\UE4_IndirectTexture\\ShortTest\\Source\\ShortTestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
