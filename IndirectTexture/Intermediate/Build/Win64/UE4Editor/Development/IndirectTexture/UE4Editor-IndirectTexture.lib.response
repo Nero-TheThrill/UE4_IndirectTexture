@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-IndirectTexture.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\IndirectTextureEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\IndirectTexture.cpp.obj"
+"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\IndirectTextureGameModeBase.cpp.obj"
+"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\IndirectTexture.init.gen.cpp.obj"
+"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\IndirectTextureGameModeBase.gen.cpp.obj"
+"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\Default.rc2.res"
+/OUT:"D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\UE4Editor-IndirectTexture.lib"
+/INCLUDE:IMPLEMENT_MODULE_IndirectTexture

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\UE4_IndirectTexture\\IndirectTexture\\Source\\IndirectTexture\\IndirectTexture.Build.cs",
+		"D:\\UE4_IndirectTexture\\IndirectTexture\\Source\\IndirectTexture.Target.cs",
+		"D:\\UE4_IndirectTexture\\IndirectTexture\\Source\\IndirectTextureEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.4"
+}

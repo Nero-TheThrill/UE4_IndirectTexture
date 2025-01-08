@@ -1,0 +1,2 @@
+D:\UE4_IndirectTexture\IndirectTexture\Intermediate\Build\Win64\UE4Editor\Development\IndirectTexture\Definitions.IndirectTexture.h
+D:\UE4_IndirectTexture\IndirectTexture\Source\IndirectTexture\IndirectTexture.h

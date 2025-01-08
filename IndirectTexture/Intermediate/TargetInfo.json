@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "IndirectTexture",
+			"Path": "D:\\UE4_IndirectTexture\\IndirectTexture\\Source\\IndirectTexture.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "IndirectTextureEditor",
+			"Path": "D:\\UE4_IndirectTexture\\IndirectTexture\\Source\\IndirectTextureEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
