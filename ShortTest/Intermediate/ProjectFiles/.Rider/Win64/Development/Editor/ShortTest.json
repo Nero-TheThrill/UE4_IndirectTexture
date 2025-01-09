@@ -88,6 +88,20 @@
 			]
 		},
 		{
+			"File": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Binaries\\Win64\\UE4Editor-IndirectTexturePlugin.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"IndirectTexturePlugin"
+			]
+		},
+		{
+			"File": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Binaries\\Win64\\UE4Editor-IndirectTexturePluginEditor.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"IndirectTexturePluginEditor"
+			]
+		},
+		{
 			"File": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Plugins\\2D\\Paper2D\\Binaries\\Win64\\UE4Editor-Paper2D.dll",
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
@@ -3946,6 +3960,20 @@
 			]
 		},
 		{
+			"File": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Binaries\\Win64\\UE4Editor-IndirectTexturePlugin.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"IndirectTexturePlugin"
+			]
+		},
+		{
+			"File": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Binaries\\Win64\\UE4Editor-IndirectTexturePluginEditor.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"IndirectTexturePluginEditor"
+			]
+		},
+		{
 			"File": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Plugins\\2D\\Paper2D\\Binaries\\Win64\\UE4Editor-Paper2D.dll",
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
@@ -5319,6 +5347,100 @@
 				"bOptimizeCode": true,
 				"bUseUnity": true
 			}
+		},
+		"IndirectTexturePlugin": 
+		{
+			"Name": "IndirectTexturePlugin",
+			"Directory": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin",
+			"Rules": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin\\IndirectTexturePlugin.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core"
+			],
+			"PrivateDependencyModules": [
+				"CoreUObject",
+				"Engine",
+				"Slate",
+				"SlateCore"
+			],
+			"PublicIncludePaths": [
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source",
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin"
+			],
+			"PrivateIncludePaths": [
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ProjectDefinitions": [
+				"IMPLEMENT_ENCRYPTION_KEY_REGISTRATION()=",
+				"IMPLEMENT_SIGNING_KEY_REGISTRATION()="
+			],
+			"ApiDefinitions": [
+				"INDIRECTTEXTUREPLUGIN_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\IndirectTexturePlugin",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Public\\EngineSharedPCH.h"
+		},
+		"IndirectTexturePluginEditor": 
+		{
+			"Name": "IndirectTexturePluginEditor",
+			"Directory": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePluginEditor",
+			"Rules": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePluginEditor\\IndirectTexturePluginEditor.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core"
+			],
+			"PrivateDependencyModules": [
+				"CoreUObject",
+				"Engine",
+				"Slate",
+				"SlateCore",
+				"IndirectTexturePlugin",
+				"UnrealEd"
+			],
+			"PublicIncludePaths": [
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source",
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePluginEditor\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePluginEditor"
+			],
+			"PrivateIncludePaths": [
+				"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePluginEditor\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ProjectDefinitions": [
+				"IMPLEMENT_ENCRYPTION_KEY_REGISTRATION()=",
+				"IMPLEMENT_SIGNING_KEY_REGISTRATION()="
+			],
+			"ApiDefinitions": [
+				"INDIRECTTEXTUREPLUGINEDITOR_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\IndirectTexturePluginEditor",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Source\\Editor\\UnrealEd\\Public\\UnrealEdSharedPCH.h"
 		},
 		"Paper2D": 
 		{
@@ -34116,6 +34238,15 @@
 	},
 	"Plugins": 
 	{
+		"IndirectTexturePlugin": 
+		{
+			"File": "D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\IndirectTexturePlugin.uplugin",
+			"Type": "Project",
+			"Modules": [
+				"IndirectTexturePlugin",
+				"IndirectTexturePluginEditor"
+			]
+		},
 		"Paper2D": 
 		{
 			"File": "C:\\Program Files\\Epic Games\\UE_4.25\\Engine\\Plugins\\2D\\Paper2D\\Paper2D.uplugin",
