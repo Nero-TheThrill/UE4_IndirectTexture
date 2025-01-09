@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{09532DFD-34E5-4AAF-9B31-8B1403186E9D}</ProjectGuid>
+    <ProjectGuid>{7D520B35-7DE2-4CED-8DE9-31AC1A9A7E9A}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>ShortTest</RootNamespace>
     <PlatformToolset>v142</PlatformToolset>

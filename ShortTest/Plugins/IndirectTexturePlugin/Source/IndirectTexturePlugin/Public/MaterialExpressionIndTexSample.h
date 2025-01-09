@@ -17,7 +17,13 @@ class INDIRECTTEXTUREPLUGIN_API UMaterialExpressionIndTexSample : public UMateri
 public:
 	UPROPERTY(EditAnywhere)
 	class UIndirectTexture* IndirectTexture;
+
+	UPROPERTY(EditAnywhere)
+	FExpressionInput inputTexture;
 	virtual int32 Compile(FMaterialCompiler* Compiler, int32 OutputIndex) override;
 	virtual UObject* GetReferencedTexture() const override;
+	//virtual TArray<UObject*> GetReferencedTextures() const override;
+	//virtual UObject* GetReferencedTexture(int32 Index) const;
+	//virtual void GetReferencedTextures(TArray<UTexture*>& OutTextures) const;
 	virtual bool CanReferenceTexture() const override;
 };

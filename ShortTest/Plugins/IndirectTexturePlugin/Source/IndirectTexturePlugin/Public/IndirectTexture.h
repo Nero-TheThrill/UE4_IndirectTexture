@@ -24,7 +24,9 @@ public:
 
     UPROPERTY(EditAnywhere)
 	FIntPoint IndirectTextureResolution;
+	UPROPERTY(EditAnywhere)
+	UTexture2D* TileIndexTexture;
 
-
+	void GenerateTileIndexTexture();
 	void OnPropertyChanged(UObject* ObjectBeingModified, FPropertyChangedEvent& PropertyChangedEvent);
 };
