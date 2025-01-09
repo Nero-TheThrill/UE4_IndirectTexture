@@ -9,6 +9,7 @@ UIndirectTexture::UIndirectTexture()
     TilesetTileCount = FIntPoint(0, 0);
     IndirectTextureResolution = FIntPoint(0, 0);
     GenerateTileIndexTexture();
+    FCoreUObjectDelegates::OnObjectPropertyChanged.AddUObject(this, &UIndirectTexture::OnPropertyChanged);
 }
 
 void UIndirectTexture::GenerateTileIndexTexture()
