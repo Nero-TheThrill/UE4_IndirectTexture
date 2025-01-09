@@ -12,8 +12,9 @@ UCLASS()
 class INDIRECTTEXTUREPLUGIN_API UIndirectTexture : public UObject
 {
 	GENERATED_BODY()
-
+public:
 	UIndirectTexture();
+
 
 	UPROPERTY(EditAnywhere)
 	UTexture2D* TilesetTexture;

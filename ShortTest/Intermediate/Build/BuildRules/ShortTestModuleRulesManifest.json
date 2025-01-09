@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
 		"D:\\UE4_IndirectTexture\\ShortTest\\Source\\ShortTest\\ShortTest.Build.cs",
-		"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin\\IndirectTexturePlugin.Build.cs",
 		"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePluginEditor\\IndirectTexturePluginEditor.Build.cs",
+		"D:\\UE4_IndirectTexture\\ShortTest\\Plugins\\IndirectTexturePlugin\\Source\\IndirectTexturePlugin\\IndirectTexturePlugin.Build.cs",
 		"D:\\UE4_IndirectTexture\\ShortTest\\Source\\ShortTest.Target.cs",
 		"D:\\UE4_IndirectTexture\\ShortTest\\Source\\ShortTestEditor.Target.cs"
 	],

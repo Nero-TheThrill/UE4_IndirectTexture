@@ -1,8 +1,8 @@
-﻿Log file open, 01/09/25 14:49:47
+﻿Log file open, 01/09/25 19:28:13
 LogInit: Display: Running engine for game: ShortTest
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 83 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.300285
+LogStats: Stats thread started at 0.382900
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -195,475 +195,718 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:957][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2025.01.09-05.49.47:957][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:957][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2025.01.09-05.49.47:959][  0]LogInit: Selected Device Profile: [Windows]
-[2025.01.09-05.49.47:959][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2025.01.09-05.49.47:959][  0]LogHAL: Display: Platform has ~ 32 GB [34141495296 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2025.01.09-05.49.47:959][  0]LogInit: Going up to parent DeviceProfile []
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2025.01.09-05.49.47:959][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2025.01.09-05.49.47:960][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
-[2025.01.09-05.49.47:960][  0]LogInit: Computer: EULB
-[2025.01.09-05.49.47:960][  0]LogInit: User: imjin
-[2025.01.09-05.49.47:960][  0]LogInit: CPU Page size=4096, Cores=24
-[2025.01.09-05.49.47:960][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2025.01.09-05.49.47:960][  0]LogMemory: Memory total: Physical=31.8GB (32GB approx)
-[2025.01.09-05.49.47:960][  0]LogMemory: Platform Memory Stats for Windows
-[2025.01.09-05.49.47:960][  0]LogMemory: Process Physical Memory: 123.65 MB used, 123.65 MB peak
-[2025.01.09-05.49.47:960][  0]LogMemory: Process Virtual Memory: 104.01 MB used, 104.01 MB peak
-[2025.01.09-05.49.47:960][  0]LogMemory: Physical Memory: 16540.34 MB used,  16019.52 MB free, 32559.87 MB total
-[2025.01.09-05.49.47:960][  0]LogMemory: Virtual Memory: 5264.52 MB used,  134212464.00 MB free, 134217728.00 MB total
-[2025.01.09-05.49.48:002][  0]LogWindows: WindowsPlatformFeatures enabled
-[2025.01.09-05.49.48:031][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2025.01.09-05.49.48:032][  0]LogInit: Using OS detected language (en-US).
-[2025.01.09-05.49.48:032][  0]LogInit: Using OS detected locale (en-US).
-[2025.01.09-05.49.48:036][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2025.01.09-05.49.48:125][  0]LogInit: Setting process to per monitor DPI aware
-[2025.01.09-05.49.48:151][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2025.01.09-05.49.48:151][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2025.01.09-05.49.48:205][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2025.01.09-05.49.48:205][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2025.01.09-05.49.48:205][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2025.01.09-05.49.48:205][  0]LogD3D11RHI: D3D11 adapters:
-[2025.01.09-05.49.48:310][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 4060 Laptop GPU' (Feature Level 11_0)
-[2025.01.09-05.49.48:310][  0]LogD3D11RHI:       7957/0/16279 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2025.01.09-05.49.48:312][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2025.01.09-05.49.48:312][  0]LogD3D11RHI:       0/0/16279 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2025.01.09-05.49.48:312][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2025.01.09-05.49.48:321][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2025.01.09-05.49.48:321][  0]LogD3D11RHI:     GPU DeviceId: 0x28e0 (for the marketing name, search the web for "GPU Device Id")
-[2025.01.09-05.49.48:321][  0]LogWindows: EnumDisplayDevices:
-[2025.01.09-05.49.48:321][  0]LogWindows:    0. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:1 D:1)
-[2025.01.09-05.49.48:322][  0]LogWindows:    1. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:0 D:1)
-[2025.01.09-05.49.48:322][  0]LogWindows:    2. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:0 D:0)
-[2025.01.09-05.49.48:322][  0]LogWindows:    3. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:0 D:0)
-[2025.01.09-05.49.48:322][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2025.01.09-05.49.48:322][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 4060 Laptop GPU
-[2025.01.09-05.49.48:322][  0]LogD3D11RHI:   Driver Version: 560.94 (internal:32.0.15.6094, unified:560.94)
-[2025.01.09-05.49.48:322][  0]LogD3D11RHI:      Driver Date: 8-14-2024
-[2025.01.09-05.49.48:322][  0]LogRHI: Texture pool is 5569 MB (70% of 7957 MB)
-[2025.01.09-05.49.48:393][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2025.01.09-05.49.48:394][  0]LogD3D11RHI: Async texture creation enabled
-[2025.01.09-05.49.48:394][  0]LogD3D11RHI: Array index from any shader is supported
-[2025.01.09-05.49.48:394][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061087).
-[2025.01.09-05.49.48:411][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2025.01.09-05.49.48:611][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2025.01.09-05.49.48:623][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2025.01.09-05.49.48:636][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2025.01.09-05.49.48:636][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2025.01.09-05.49.48:641][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2025.01.09-05.49.48:646][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2025.01.09-05.49.48:650][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2025.01.09-05.49.48:655][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2025.01.09-05.49.48:660][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2025.01.09-05.49.48:666][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2025.01.09-05.49.48:670][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2025.01.09-05.49.48:685][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2025.01.09-05.49.48:685][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2025.01.09-05.49.48:695][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2025.01.09-05.49.48:695][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2025.01.09-05.49.48:700][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2025.01.09-05.49.48:705][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2025.01.09-05.49.48:709][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2025.01.09-05.49.48:713][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2025.01.09-05.49.48:713][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2025.01.09-05.49.48:717][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2025.01.09-05.49.48:750][  0]LogShaderCompilers: Guid format shader working directory is 13 characters bigger than the processId version (D:/UE4_IndirectTexture/ShortTest/Intermediate/Shaders/WorkingDirectory/31076/).
-[2025.01.09-05.49.48:750][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/imjin/AppData/Local/Temp/UnrealShaderWorkingDir/1A8BC01F4A2CE5BD7B726B8CDAD8D784/'.
-[2025.01.09-05.49.48:750][  0]LogXGEController: Cleaning working directory: C:/Users/imjin/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2025.01.09-05.49.48:750][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2025.01.09-05.49.48:750][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2025.01.09-05.49.48:750][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2025.01.09-05.49.49:181][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2025.01.09-05.49.49:216][  0]LogDerivedDataCache: Loaded boot cache 0.03s 75MB C:/Users/imjin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2025.01.09-05.49.49:216][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/imjin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2025.01.09-05.49.49:216][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/UE4_IndirectTexture/ShortTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2025.01.09-05.49.49:216][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2025.01.09-05.49.49:216][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/UE4_IndirectTexture/ShortTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2025.01.09-05.49.49:216][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2025.01.09-05.49.49:222][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2025.01.09-05.49.49:222][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2025.01.09-05.49.49:222][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2025.01.09-05.49.49:223][  0]LogDerivedDataCache: Using Local data cache path C:/Users/imjin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2025.01.09-05.49.49:223][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2025.01.09-05.49.49:223][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2025.01.09-05.49.49:248][  0]LogSlate: Using FreeType 2.10.0
-[2025.01.09-05.49.49:248][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2025.01.09-05.49.49:270][  0]LogAssetRegistry: FAssetRegistry took 0.0016 seconds to start up
-[2025.01.09-05.49.49:383][  0]LogInit: Selected Device Profile: [Windows]
-[2025.01.09-05.49.49:445][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2025.01.09-05.49.49:445][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2025.01.09-05.49.49:445][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2025.01.09-05.49.49:445][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2025.01.09-05.49.49:445][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2025.01.09-05.49.49:453][  0]LogNetVersion: ShortTest 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 161377622)
-[2025.01.09-05.49.49:710][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000214573EC380), frame # 0
-[2025.01.09-05.49.49:710][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002145731EAC0), frame # 0
-[2025.01.09-05.49.49:711][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000021457365E00), frame # 0
-[2025.01.09-05.49.49:728][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.013070 seconds
-[2025.01.09-05.49.49:730][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
-[2025.01.09-05.49.49:730][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
-[2025.01.09-05.49.49:730][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2025.01.09-05.49.49:908][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2025.01.09-05.49.49:911][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2025.01.09-05.49.49:953][  0]SourceControl: Source control is disabled
-[2025.01.09-05.49.49:953][  0]SourceControl: Source control is disabled
-[2025.01.09-05.49.49:955][  0]SourceControl: Source control is disabled
-[2025.01.09-05.49.49:957][  0]SourceControl: Source control is disabled
-[2025.01.09-05.49.49:961][  0]SourceControl: Source control is disabled
-[2025.01.09-05.49.50:097][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2025.01.09-05.49.50:107][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2025.01.09-05.49.50:107][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2025.01.09-05.49.50:134][  0]LogOcInput: OculusInput pre-init called
-[2025.01.09-05.49.50:139][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2025.01.09-05.49.50:139][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2025.01.09-05.49.51:718][  0]LogEngine: Initializing Engine...
-[2025.01.09-05.49.51:718][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2025.01.09-05.49.51:718][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2025.01.09-05.49.51:719][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2025.01.09-05.49.51:783][  0]LogInit: Initializing FReadOnlyCVARCache
-[2025.01.09-05.49.51:787][  0]LogAIModule: Creating AISystem for world Untitled
-[2025.01.09-05.49.51:787][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000021461CF0600), frame # 0
-[2025.01.09-05.49.51:787][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000021461CA3B00), frame # 0
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2025.01.09-05.49.51:793][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2025.01.09-05.49.51:793][  0]LogAudio: Display: Using built-in audio occlusion.
-[2025.01.09-05.49.51:793][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2025.01.09-05.49.51:843][  0]LogAudioMixer: Display: 0: FrontLeft
-[2025.01.09-05.49.51:843][  0]LogAudioMixer: Display: 1: FrontRight
-[2025.01.09-05.49.51:863][  0]LogAudioMixer: Display: Using Audio Device Speakers (EDIFIER G2000)
-[2025.01.09-05.49.51:866][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2025.01.09-05.49.51:867][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2025.01.09-05.49.51:867][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2025.01.09-05.49.51:868][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2025.01.09-05.49.51:868][  0]LogInit: FAudioDevice initialized.
-[2025.01.09-05.49.51:868][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2025.01.09-05.49.51:903][  0]LogDerivedDataCache: Saved boot cache 0.03s 75MB C:/Users/imjin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2025.01.09-05.49.51:903][  0]LogInit: Texture streaming: Enabled
-[2025.01.09-05.49.51:912][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2025.01.09-05.49.51:912][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2025.01.09-05.49.51:913][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2025.01.09-05.49.51:936][  0]LogInit: Transaction tracking system initialized
-[2025.01.09-05.49.51:949][  0]BlueprintLog: New page: Editor Load
-[2025.01.09-05.49.51:983][  0]LocalizationService: Localization service is disabled
-[2025.01.09-05.49.52:062][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2025.01.09-05.49.52:062][  0]LogCook: Display: Mobile HDR setting 1
-[2025.01.09-05.49.52:134][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Content/' took 0.00s
-[2025.01.09-05.49.52:252][  0]SourceControl: Source control is disabled
-[2025.01.09-05.49.52:252][  0]LogUnrealEdMisc: Loading editor; pre map load, took 5.250
-[2025.01.09-05.49.52:252][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2025.01.09-05.49.52:252][  0]LightingResults: New page: Lighting Build
-[2025.01.09-05.49.52:253][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2025.01.09-05.49.52:253][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2025.01.09-05.49.52:253][  0]MapCheck: New page: Map Check
-[2025.01.09-05.49.52:253][  0]LightingResults: New page: Lighting Build
-[2025.01.09-05.49.52:266][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000021461CF0600), frame # 0
-[2025.01.09-05.49.52:266][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000021461CA3B00), frame # 0
-[2025.01.09-05.49.52:267][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.36ms
-[2025.01.09-05.49.52:297][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2025.01.09-05.49.52:297][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002144C94BE00), frame # 0
-[2025.01.09-05.49.52:297][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002144C9E4A40), frame # 0
-[2025.01.09-05.49.52:299][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2025.01.09-05.49.52:313][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
-[2025.01.09-05.49.52:313][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2025.01.09-05.49.52:313][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.06ms to complete.
-[2025.01.09-05.49.52:313][  0]LogFileHelpers: Loading map 'Template_Default' took 0.061
-[2025.01.09-05.49.52:313][  0]LogUnrealEdMisc: Total Editor Startup Time, took 5.312
-[2025.01.09-05.49.52:377][  0]LogWindowsTextInputMethodSystem: Display: IME system now activated using TSF (Microsoft IME).
-[2025.01.09-05.49.52:397][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2025.01.09-05.49.52:400][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2025.01.09-05.49.52:403][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2025.01.09-05.49.52:406][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2025.01.09-05.49.52:410][  0]LogCollectionManager: Loaded 0 collections in 0.000756 seconds
-[2025.01.09-05.49.52:419][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Saved/Collections/' took 0.00s
-[2025.01.09-05.49.52:419][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Content/Developers/imjin/Collections/' took 0.00s
-[2025.01.09-05.49.52:419][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Content/Collections/' took 0.00s
-[2025.01.09-05.49.52:419][  0]LogContentBrowser: Native class hierarchy populated in 0.0051 seconds. Added 3430 classes and 828 folders.
-[2025.01.09-05.49.52:421][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2025.01.09-05.49.52:447][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2025.01.09-05.49.52:449][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
-[2025.01.09-05.49.52:462][  0]LogSlate: Took 0.000095 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2025.01.09-05.49.52:463][  0]LogSlate: Took 0.000076 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2025.01.09-05.49.52:466][  0]LogSlate: Took 0.000088 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2025.01.09-05.49.52:466][  0]LogSlate: Took 0.000091 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2025.01.09-05.49.52:523][  0]LogRenderer: Reallocating scene render targets to support 1488x804 Format 10 NumSamples 1 (Frame:1).
-[2025.01.09-05.49.52:577][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2025.01.09-05.49.52:577][  0]LogLoad: (Engine Initialization) Total time: 5.58 seconds
-[2025.01.09-05.49.52:577][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2025.01.09-05.49.52:607][  0]LogAssetRegistry: Asset discovery search completed in 3.3369 seconds
-[2025.01.09-05.49.52:609][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
-[2025.01.09-05.49.52:609][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2025.01.09-05.49.54:567][116]LogSlate: Took 0.000097 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2025.01.09-05.49.54:577][116]LogAssetEditorSubsystem: Opening Asset editor for IndirectTexture /Game/IndTex.IndTex
-[2025.01.09-05.49.56:714][243]LogTemp: Warning: texture removed
-[2025.01.09-05.49.56:715][243]LogTemp: Warning: size x: 0, size y: 0
-[2025.01.09-05.49.56:715][243]LogTemp: Warning: virtual texture resolution should be: 0 x 0
-[2025.01.09-05.49.59:185][391]LogTemp: Warning: size x: 128, size y: 64
-[2025.01.09-05.49.59:185][391]LogTemp: Warning: virtual texture resolution should be: 55552 x 5440
-[2025.01.09-05.50.16:514][143]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/IndTex" FILE="D:/UE4_IndirectTexture/ShortTest/Content/IndTex.uasset" SILENT=true
-[2025.01.09-05.50.16:515][143]LogSavePackage: Moving 'D:/UE4_IndirectTexture/ShortTest/Saved/IndTexC5B0F3CC4E9704D7962FCC8E7F9D332E.tmp' to 'D:/UE4_IndirectTexture/ShortTest/Content/IndTex.uasset'
-[2025.01.09-05.50.16:521][143]AssetCheck: New page: Asset Save: IndTex
-[2025.01.09-05.50.16:521][143]LogContentValidation: Display: Validating IndirectTexture /Game/IndTex.IndTex
-[2025.01.09-05.50.19:493][322]LogTemp: Warning: texture removed
-[2025.01.09-05.50.19:493][322]LogTemp: Warning: size x: 0, size y: 0
-[2025.01.09-05.50.19:493][322]LogTemp: Warning: virtual texture resolution should be: 0 x 0
-[2025.01.09-05.50.20:732][396]LogTemp: Warning: size x: 128, size y: 64
-[2025.01.09-05.50.20:732][396]LogTemp: Warning: virtual texture resolution should be: 65536 x 32768
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:448][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2025.01.09-10.28.13:448][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:448][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:451][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2025.01.09-10.28.13:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2025.01.09-10.28.13:452][  0]LogInit: Selected Device Profile: [Windows]
+[2025.01.09-10.28.13:452][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2025.01.09-10.28.13:452][  0]LogHAL: Display: Platform has ~ 32 GB [34141495296 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2025.01.09-10.28.13:452][  0]LogInit: Going up to parent DeviceProfile []
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2025.01.09-10.28.13:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Scalability.ini]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2025.01.09-10.28.13:453][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/UE4_IndirectTexture/ShortTest/Saved/Config/Windows/Engine.ini]
+[2025.01.09-10.28.13:453][  0]LogInit: Computer: EULB
+[2025.01.09-10.28.13:453][  0]LogInit: User: imjin
+[2025.01.09-10.28.13:453][  0]LogInit: CPU Page size=4096, Cores=24
+[2025.01.09-10.28.13:453][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2025.01.09-10.28.13:453][  0]LogMemory: Memory total: Physical=31.8GB (32GB approx)
+[2025.01.09-10.28.13:453][  0]LogMemory: Platform Memory Stats for Windows
+[2025.01.09-10.28.13:453][  0]LogMemory: Process Physical Memory: 123.32 MB used, 123.32 MB peak
+[2025.01.09-10.28.13:453][  0]LogMemory: Process Virtual Memory: 103.61 MB used, 103.61 MB peak
+[2025.01.09-10.28.13:453][  0]LogMemory: Physical Memory: 17403.47 MB used,  15156.40 MB free, 32559.87 MB total
+[2025.01.09-10.28.13:453][  0]LogMemory: Virtual Memory: 5264.52 MB used,  134212464.00 MB free, 134217728.00 MB total
+[2025.01.09-10.28.13:501][  0]LogWindows: WindowsPlatformFeatures enabled
+[2025.01.09-10.28.13:532][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2025.01.09-10.28.13:535][  0]LogInit: Using OS detected language (en-US).
+[2025.01.09-10.28.13:535][  0]LogInit: Using OS detected locale (en-US).
+[2025.01.09-10.28.13:538][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2025.01.09-10.28.13:630][  0]LogInit: Setting process to per monitor DPI aware
+[2025.01.09-10.28.13:657][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2025.01.09-10.28.13:657][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2025.01.09-10.28.13:714][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2025.01.09-10.28.13:714][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2025.01.09-10.28.13:714][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2025.01.09-10.28.13:714][  0]LogD3D11RHI: D3D11 adapters:
+[2025.01.09-10.28.13:828][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 4060 Laptop GPU' (Feature Level 11_0)
+[2025.01.09-10.28.13:828][  0]LogD3D11RHI:       7957/0/16279 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2025.01.09-10.28.13:830][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2025.01.09-10.28.13:830][  0]LogD3D11RHI:       0/0/16279 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2025.01.09-10.28.13:830][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2025.01.09-10.28.13:840][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2025.01.09-10.28.13:840][  0]LogD3D11RHI:     GPU DeviceId: 0x28e0 (for the marketing name, search the web for "GPU Device Id")
+[2025.01.09-10.28.13:840][  0]LogWindows: EnumDisplayDevices:
+[2025.01.09-10.28.13:840][  0]LogWindows:    0. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:1 D:1)
+[2025.01.09-10.28.13:840][  0]LogWindows:    1. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:0 D:1)
+[2025.01.09-10.28.13:841][  0]LogWindows:    2. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:0 D:0)
+[2025.01.09-10.28.13:841][  0]LogWindows:    3. 'NVIDIA GeForce RTX 4060 Laptop GPU' (P:0 D:0)
+[2025.01.09-10.28.13:841][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2025.01.09-10.28.13:841][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 4060 Laptop GPU
+[2025.01.09-10.28.13:841][  0]LogD3D11RHI:   Driver Version: 560.94 (internal:32.0.15.6094, unified:560.94)
+[2025.01.09-10.28.13:841][  0]LogD3D11RHI:      Driver Date: 8-14-2024
+[2025.01.09-10.28.13:841][  0]LogRHI: Texture pool is 5569 MB (70% of 7957 MB)
+[2025.01.09-10.28.13:908][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2025.01.09-10.28.13:908][  0]LogD3D11RHI: Async texture creation enabled
+[2025.01.09-10.28.13:908][  0]LogD3D11RHI: Array index from any shader is supported
+[2025.01.09-10.28.13:912][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061087).
+[2025.01.09-10.28.13:928][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2025.01.09-10.28.14:138][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2025.01.09-10.28.14:150][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2025.01.09-10.28.14:162][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2025.01.09-10.28.14:162][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2025.01.09-10.28.14:168][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2025.01.09-10.28.14:172][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2025.01.09-10.28.14:177][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2025.01.09-10.28.14:182][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2025.01.09-10.28.14:187][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2025.01.09-10.28.14:191][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2025.01.09-10.28.14:197][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2025.01.09-10.28.14:208][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2025.01.09-10.28.14:208][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2025.01.09-10.28.14:217][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2025.01.09-10.28.14:217][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2025.01.09-10.28.14:222][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2025.01.09-10.28.14:229][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2025.01.09-10.28.14:236][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2025.01.09-10.28.14:242][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2025.01.09-10.28.14:242][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2025.01.09-10.28.14:248][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2025.01.09-10.28.14:281][  0]LogShaderCompilers: Guid format shader working directory is 13 characters bigger than the processId version (D:/UE4_IndirectTexture/ShortTest/Intermediate/Shaders/WorkingDirectory/32368/).
+[2025.01.09-10.28.14:281][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/imjin/AppData/Local/Temp/UnrealShaderWorkingDir/0C54864A4B5BB7B76293BD9E5A152928/'.
+[2025.01.09-10.28.14:281][  0]LogXGEController: Cleaning working directory: C:/Users/imjin/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2025.01.09-10.28.14:282][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2025.01.09-10.28.14:282][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2025.01.09-10.28.14:282][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2025.01.09-10.28.14:711][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2025.01.09-10.28.14:747][  0]LogDerivedDataCache: Loaded boot cache 0.04s 75MB C:/Users/imjin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2025.01.09-10.28.14:747][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/imjin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2025.01.09-10.28.14:747][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/UE4_IndirectTexture/ShortTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2025.01.09-10.28.14:747][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2025.01.09-10.28.14:747][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/UE4_IndirectTexture/ShortTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2025.01.09-10.28.14:747][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2025.01.09-10.28.14:754][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2025.01.09-10.28.14:754][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2025.01.09-10.28.14:754][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2025.01.09-10.28.14:755][  0]LogDerivedDataCache: Using Local data cache path C:/Users/imjin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2025.01.09-10.28.14:755][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2025.01.09-10.28.14:755][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2025.01.09-10.28.14:781][  0]LogSlate: Using FreeType 2.10.0
+[2025.01.09-10.28.14:781][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2025.01.09-10.28.14:800][  0]LogAssetRegistry: FAssetRegistry took 0.0019 seconds to start up
+[2025.01.09-10.28.14:911][  0]LogInit: Selected Device Profile: [Windows]
+[2025.01.09-10.28.14:974][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2025.01.09-10.28.14:974][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2025.01.09-10.28.14:974][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2025.01.09-10.28.14:974][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2025.01.09-10.28.14:974][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2025.01.09-10.28.14:986][  0]LogNetVersion: ShortTest 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 161377622)
+[2025.01.09-10.28.15:258][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001630AEE8380), frame # 0
+[2025.01.09-10.28.15:258][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001630AE3AAC0), frame # 0
+[2025.01.09-10.28.15:258][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001630AE7DE00), frame # 0
+[2025.01.09-10.28.15:277][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.013500 seconds
+[2025.01.09-10.28.15:279][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2025.01.09-10.28.15:279][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2025.01.09-10.28.15:279][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2025.01.09-10.28.15:460][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2025.01.09-10.28.15:463][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2025.01.09-10.28.15:506][  0]SourceControl: Source control is disabled
+[2025.01.09-10.28.15:506][  0]SourceControl: Source control is disabled
+[2025.01.09-10.28.15:508][  0]SourceControl: Source control is disabled
+[2025.01.09-10.28.15:510][  0]SourceControl: Source control is disabled
+[2025.01.09-10.28.15:514][  0]SourceControl: Source control is disabled
+[2025.01.09-10.28.15:658][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2025.01.09-10.28.15:668][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2025.01.09-10.28.15:668][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2025.01.09-10.28.15:695][  0]LogOcInput: OculusInput pre-init called
+[2025.01.09-10.28.15:700][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2025.01.09-10.28.15:700][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2025.01.09-10.28.17:728][  0]LogEngine: Initializing Engine...
+[2025.01.09-10.28.17:729][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2025.01.09-10.28.17:729][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2025.01.09-10.28.17:730][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2025.01.09-10.28.17:795][  0]LogInit: Initializing FReadOnlyCVARCache
+[2025.01.09-10.28.17:800][  0]LogAIModule: Creating AISystem for world Untitled
+[2025.01.09-10.28.17:800][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000016315188600), frame # 0
+[2025.01.09-10.28.17:800][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000016315153380), frame # 0
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2025.01.09-10.28.17:805][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.01.09-10.28.17:805][  0]LogAudio: Display: Using built-in audio occlusion.
+[2025.01.09-10.28.17:805][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2025.01.09-10.28.17:858][  0]LogAudioMixer: Display: 0: FrontLeft
+[2025.01.09-10.28.17:858][  0]LogAudioMixer: Display: 1: FrontRight
+[2025.01.09-10.28.17:879][  0]LogAudioMixer: Display: Using Audio Device Speakers (EDIFIER G2000)
+[2025.01.09-10.28.17:881][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.01.09-10.28.17:882][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.01.09-10.28.17:882][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.01.09-10.28.17:883][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2025.01.09-10.28.17:883][  0]LogInit: FAudioDevice initialized.
+[2025.01.09-10.28.17:883][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2025.01.09-10.28.17:928][  0]LogDerivedDataCache: Saved boot cache 0.04s 75MB C:/Users/imjin/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2025.01.09-10.28.17:928][  0]LogInit: Texture streaming: Enabled
+[2025.01.09-10.28.17:938][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2025.01.09-10.28.17:938][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2025.01.09-10.28.17:938][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2025.01.09-10.28.17:961][  0]LogInit: Transaction tracking system initialized
+[2025.01.09-10.28.17:974][  0]BlueprintLog: New page: Editor Load
+[2025.01.09-10.28.18:011][  0]LocalizationService: Localization service is disabled
+[2025.01.09-10.28.18:092][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2025.01.09-10.28.18:092][  0]LogCook: Display: Mobile HDR setting 1
+[2025.01.09-10.28.18:162][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Content/' took 0.00s
+[2025.01.09-10.28.18:286][  0]SourceControl: Source control is disabled
+[2025.01.09-10.28.18:286][  0]LogUnrealEdMisc: Loading editor; pre map load, took 5.897
+[2025.01.09-10.28.18:286][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.09-10.28.18:287][  0]LightingResults: New page: Lighting Build
+[2025.01.09-10.28.18:287][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.01.09-10.28.18:287][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.09-10.28.18:287][  0]MapCheck: New page: Map Check
+[2025.01.09-10.28.18:287][  0]LightingResults: New page: Lighting Build
+[2025.01.09-10.28.18:304][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000016315188600), frame # 0
+[2025.01.09-10.28.18:304][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000016315153380), frame # 0
+[2025.01.09-10.28.18:305][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2025.01.09-10.28.18:335][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2025.01.09-10.28.18:335][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001630503FE00), frame # 0
+[2025.01.09-10.28.18:335][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001630514E340), frame # 0
+[2025.01.09-10.28.18:337][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.09-10.28.18:350][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2025.01.09-10.28.18:350][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.09-10.28.18:350][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.066ms to complete.
+[2025.01.09-10.28.18:350][  0]LogFileHelpers: Loading map 'Template_Default' took 0.064
+[2025.01.09-10.28.18:351][  0]LogUnrealEdMisc: Total Editor Startup Time, took 5.963
+[2025.01.09-10.28.18:441][  0]LogWindowsTextInputMethodSystem: Display: IME system now activated using TSF (Microsoft IME).
+[2025.01.09-10.28.18:460][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.09-10.28.18:464][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.09-10.28.18:468][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.09-10.28.18:472][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.09-10.28.18:476][  0]LogCollectionManager: Loaded 0 collections in 0.000943 seconds
+[2025.01.09-10.28.18:485][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Saved/Collections/' took 0.00s
+[2025.01.09-10.28.18:485][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Content/Developers/imjin/Collections/' took 0.00s
+[2025.01.09-10.28.18:485][  0]LogFileCache: Scanning file cache for directory 'D:/UE4_IndirectTexture/ShortTest/Content/Collections/' took 0.00s
+[2025.01.09-10.28.18:485][  0]LogContentBrowser: Native class hierarchy populated in 0.0054 seconds. Added 3431 classes and 828 folders.
+[2025.01.09-10.28.18:487][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2025.01.09-10.28.18:513][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2025.01.09-10.28.18:515][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2025.01.09-10.28.18:538][  0]LogSlate: Took 0.000104 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.01.09-10.28.18:539][  0]LogSlate: Took 0.000160 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2025.01.09-10.28.18:541][  0]LogSlate: Took 0.000097 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2025.01.09-10.28.18:574][  0]LogRenderer: Reallocating scene render targets to support 1488x804 Format 10 NumSamples 1 (Frame:1).
+[2025.01.09-10.28.18:647][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2025.01.09-10.28.18:647][  0]LogLoad: (Engine Initialization) Total time: 6.26 seconds
+[2025.01.09-10.28.18:647][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2025.01.09-10.28.18:680][  0]LogAssetRegistry: Asset discovery search completed in 3.8821 seconds
+[2025.01.09-10.28.18:682][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2025.01.09-10.28.18:683][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2025.01.09-10.28.19:827][ 66]LogSlate: Took 0.000090 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.01.09-10.28.19:841][ 66]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/IndTexMaterial.IndTexMaterial
+[2025.01.09-10.28.19:841][ 66]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.28.19:996][ 66]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.28.20:001][ 66]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.28.20:009][ 66]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.28.20:010][ 66]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.28.20:027][ 66]LogSlate: Took 0.000105 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2025.01.09-10.28.20:482][ 92]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.28.20:482][ 92]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.28.20:482][ 92]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.28.20:482][ 92]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.28.20:482][ 92]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.28.20:482][ 92]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.28.20:485][ 92]LogSlate: Took 0.000105 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2025.01.09-10.28.25:216][356]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.28.25:227][357]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.28.25:546][375]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.28.25:546][375]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.28.25:546][375]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.28.25:546][375]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.28.25:546][375]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.28.25:546][375]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.01:379][873]LogHotReload: New module detected: UE4Editor-ShortTest-0011.dll
+[2025.01.09-10.29.02:406][877]LogHotReload: Starting Hot-Reload from IDE
+[2025.01.09-10.29.03:329][877]LogContentBrowser: Native class hierarchy updated for 'ShortTest' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2025.01.09-10.29.03:329][877]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2025.01.09-10.29.03:358][877]LogContentBrowser: Native class hierarchy populated in 0.0048 seconds. Added 3431 classes and 828 folders.
+[2025.01.09-10.29.03:362][877]Display: HotReload took  1.0s.
+[2025.01.09-10.29.05:618][969]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.05:638][971]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.06:076][996]MaterialEditorStats: Base pass shader: 122 instructions
+[2025.01.09-10.29.06:076][996]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 196 instructions
+[2025.01.09-10.29.06:076][996]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.06:076][996]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.06:076][996]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.06:076][996]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.06:910][ 46]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.06:918][ 47]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.07:239][ 64]MaterialEditorStats: Base pass shader: 122 instructions
+[2025.01.09-10.29.07:239][ 64]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 196 instructions
+[2025.01.09-10.29.07:239][ 64]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.07:239][ 64]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.07:239][ 64]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.07:239][ 64]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.08:220][122]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.08:228][123]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.08:543][141]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.29.08:543][141]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.29.08:543][141]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.08:543][141]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.08:543][141]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.08:543][141]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.12:651][387]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.12:654][387]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 13
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 12
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 11
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 10
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 9
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 8
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 7
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 6
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 5
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (10/29): shaders left to compile 4
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (11/29): shaders left to compile 3
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (12/29): shaders left to compile 2
+[2025.01.09-10.29.12:659][387]LogShaderCompilers: Display: Worker (13/29): shaders left to compile 1
+[2025.01.09-10.29.12:660][387]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2025.01.09-10.29.12:738][391]LogShaderCompilers: Display: Worker (14/29): shaders left to compile 4
+[2025.01.09-10.29.12:738][391]LogShaderCompilers: Display: Worker (15/29): shaders left to compile 3
+[2025.01.09-10.29.12:738][391]LogShaderCompilers: Display: Worker (16/29): shaders left to compile 2
+[2025.01.09-10.29.12:738][391]LogShaderCompilers: Display: Worker (17/29): shaders left to compile 1
+[2025.01.09-10.29.13:063][409]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.29.13:063][409]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.29.13:063][409]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.13:063][409]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.13:063][409]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.13:063][409]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.14:213][478]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.14:221][478]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.14:222][478]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2025.01.09-10.29.14:233][479]LogShaderCompilers: Display: Worker (10/29): shaders left to compile 4
+[2025.01.09-10.29.14:233][479]LogShaderCompilers: Display: Worker (11/29): shaders left to compile 3
+[2025.01.09-10.29.14:233][479]LogShaderCompilers: Display: Worker (12/29): shaders left to compile 2
+[2025.01.09-10.29.14:233][479]LogShaderCompilers: Display: Worker (13/29): shaders left to compile 1
+[2025.01.09-10.29.14:595][500]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.29.14:595][500]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.29.14:595][500]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.14:595][500]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.14:595][500]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.14:595][500]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.16:362][606]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.16:374][607]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.16:711][626]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.29.16:711][626]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.29.16:711][626]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.16:711][626]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.16:711][626]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.16:711][626]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.20:078][828]LogEditorTransaction: Undo Create Pin Link
+[2025.01.09-10.29.20:078][828]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:082][828]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.20:100][829]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.20:273][838]LogEditorTransaction: Undo Create Pin Link
+[2025.01.09-10.29.20:274][838]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (10/29): shaders left to compile 9
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (11/29): shaders left to compile 8
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (12/29): shaders left to compile 7
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (13/29): shaders left to compile 6
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (14/29): shaders left to compile 5
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (15/29): shaders left to compile 4
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (16/29): shaders left to compile 3
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (17/29): shaders left to compile 2
+[2025.01.09-10.29.20:280][838]LogShaderCompilers: Display: Worker (18/29): shaders left to compile 1
+[2025.01.09-10.29.20:281][838]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:290][838]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (19/29): shaders left to compile 13
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (20/29): shaders left to compile 12
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (21/29): shaders left to compile 11
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (22/29): shaders left to compile 10
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (23/29): shaders left to compile 9
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (24/29): shaders left to compile 8
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (25/29): shaders left to compile 7
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (26/29): shaders left to compile 6
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (27/29): shaders left to compile 5
+[2025.01.09-10.29.20:324][838]LogShaderCompilers: Display: Worker (28/29): shaders left to compile 4
+[2025.01.09-10.29.20:429][842]LogEditorTransaction: Undo Material Editor: New Expression
+[2025.01.09-10.29.20:430][842]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:435][842]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:603][849]LogEditorTransaction: Undo Move Node
+[2025.01.09-10.29.20:605][849]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 12
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 11
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 10
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 9
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 8
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 7
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 6
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 5
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 4
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (11/29): shaders left to compile 3
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (12/29): shaders left to compile 2
+[2025.01.09-10.29.20:632][850]LogShaderCompilers: Display: Worker (15/29): shaders left to compile 1
+[2025.01.09-10.29.21:094][872]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.29.21:094][872]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.29.21:094][872]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.21:094][872]MaterialEditorStats: Texture samplers: 3/16
+[2025.01.09-10.29.21:094][872]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.21:094][872]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.21:478][895]LogMaterialEditor: Saving and Compiling material IndTexMaterial
+[2025.01.09-10.29.21:763][895]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (1/29): shaders left to compile 9
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (2/29): shaders left to compile 8
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (3/29): shaders left to compile 7
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (4/29): shaders left to compile 6
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (5/29): shaders left to compile 5
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (6/29): shaders left to compile 4
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (7/29): shaders left to compile 3
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (8/29): shaders left to compile 2
+[2025.01.09-10.29.21:775][895]LogShaderCompilers: Display: Worker (9/29): shaders left to compile 1
+[2025.01.09-10.29.21:790][895]LogMaterial: Display: Missing cached shader map for material IndTexMaterial, compiling. 
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (10/29): shaders left to compile 15
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (11/29): shaders left to compile 14
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (12/29): shaders left to compile 13
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (13/29): shaders left to compile 12
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (14/29): shaders left to compile 11
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (15/29): shaders left to compile 10
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (16/29): shaders left to compile 9
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (17/29): shaders left to compile 8
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (18/29): shaders left to compile 7
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (19/29): shaders left to compile 6
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (20/29): shaders left to compile 5
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (21/29): shaders left to compile 4
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (22/29): shaders left to compile 3
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (23/29): shaders left to compile 2
+[2025.01.09-10.29.21:798][895]LogShaderCompilers: Display: Worker (24/29): shaders left to compile 1
+[2025.01.09-10.29.21:813][895]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2025.01.09-10.29.21:816][895]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2025.01.09-10.29.22:138][895]LogShaderCompilers: Display: Worker (25/29): shaders left to compile 2
+[2025.01.09-10.29.22:138][895]LogShaderCompilers: Display: Worker (26/29): shaders left to compile 1
+[2025.01.09-10.29.22:147][895]TextureStreamingBuild: Display: Compiling optional shaders took 0.332 seconds.
+[2025.01.09-10.29.22:167][895]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2025.01.09-10.29.22:294][895]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/IndTexMaterial" FILE="D:/UE4_IndirectTexture/ShortTest/Content/IndTexMaterial.uasset" SILENT=true
+[2025.01.09-10.29.22:298][895]LogSavePackage: Moving 'D:/UE4_IndirectTexture/ShortTest/Saved/IndTexMaterialBF37C4B7463F91FB82797F9D638B2682.tmp' to 'D:/UE4_IndirectTexture/ShortTest/Content/IndTexMaterial.uasset'
+[2025.01.09-10.29.22:308][895]AssetCheck: New page: Asset Save: IndTexMaterial
+[2025.01.09-10.29.22:308][895]LogContentValidation: Display: Validating Material /Game/IndTexMaterial.IndTexMaterial
+[2025.01.09-10.29.22:309][895]MaterialEditorStats: Base pass shader: 120 instructions
+[2025.01.09-10.29.22:309][895]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 194 instructions
+[2025.01.09-10.29.22:309][895]MaterialEditorStats: Base pass vertex shader: 44 instructions
+[2025.01.09-10.29.22:309][895]MaterialEditorStats: Texture samplers: 4/16
+[2025.01.09-10.29.22:309][895]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(1)
+[2025.01.09-10.29.22:309][895]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2025.01.09-10.29.22:647][916]LogSlate: Window 'IndTexMaterial' being destroyed
+[2025.01.09-10.29.22:654][916]LogSlate: Window 'IndTexMaterial' being destroyed
+[2025.01.09-10.29.22:668][916]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2025.01.09-10.29.22:668][916]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated

@@ -11,7 +11,6 @@ UIndirectTexture::UIndirectTexture()
     FCoreUObjectDelegates::OnObjectPropertyChanged.AddUObject(this, &UIndirectTexture::OnPropertyChanged);
 }
 
-
 void UIndirectTexture::OnPropertyChanged(UObject* ObjectBeingModified, FPropertyChangedEvent& PropertyChangedEvent)
 {
     if (ObjectBeingModified == this)
