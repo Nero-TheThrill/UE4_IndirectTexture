@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "IndirectTexture.generated.h"
-
 /**
  * 
  */
@@ -24,4 +23,7 @@ class INDIRECTTEXTUREPLUGIN_API UIndirectTexture : public UObject
 
     UPROPERTY(EditAnywhere)
 	FIntPoint IndirectTextureResolution;
+
+
+	void OnPropertyChanged(UObject* ObjectBeingModified, FPropertyChangedEvent& PropertyChangedEvent);
 };
