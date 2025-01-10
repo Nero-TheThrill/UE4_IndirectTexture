@@ -8,13 +8,12 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 {
     if (IndirectTexture&& IndirectTexture->TileIndexTexture)
     {
-		int32 TileCountX = Compiler->Constant(IndirectTexture->TilesetTileCount.X);
-		int32 TileCountY = Compiler->Constant(IndirectTexture->TilesetTileCount.Y);
-
-		int32 IndirectTexResX = Compiler->Constant(IndirectTexture->IndirectTextureResolution.X);
-		int32 IndirectTexResY = Compiler->Constant(IndirectTexture->IndirectTextureResolution.Y);
-		int32 TileSizeX = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeX() / IndirectTexture->TilesetTileCount.X);
-		int32 TileSizeY = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeY() / IndirectTexture->TilesetTileCount.Y);
+		int32 TileCountX = Compiler->Constant((float)IndirectTexture->TilesetTileCount.X);
+		int32 TileCountY = Compiler->Constant((float)IndirectTexture->TilesetTileCount.Y);
+		int32 IndirectTexResX = Compiler->Constant((float)IndirectTexture->IndirectTextureResolution.X);
+		int32 IndirectTexResY = Compiler->Constant((float)IndirectTexture->IndirectTextureResolution.Y);
+		int32 TileSizeX = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeX() / (float)(IndirectTexture->TilesetTileCount.X));
+		int32 TileSizeY = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeY() / (float)(IndirectTexture->TilesetTileCount.Y));
 		int32 VTextureSizeX = Compiler->Mul(TileSizeX, IndirectTexResX);
 		int32 VTextureSizeY = Compiler->Mul(TileSizeY, IndirectTexResY);
 
@@ -25,29 +24,16 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 		int32 VirtualUV_X = Compiler->Mul(VTextureSizeX, UV_X);
 		int32 VirtualUV_Y = Compiler->Mul(VTextureSizeY, UV_Y);
 
-		int32 IndirectUV_X = Compiler->Div(VirtualUV_X, TileSizeX);
-		int32 IndirectUV_Y = Compiler->Div(VirtualUV_Y, TileSizeY);
-
-		IndirectUV_X = Compiler->Div(IndirectUV_X, IndirectTexResX);
-		IndirectUV_Y = Compiler->Div(IndirectUV_Y, IndirectTexResY);
-
-		int32 IndirectUV = Compiler->AppendVector(IndirectUV_X, IndirectUV_Y);
-
 		int32 IndexTexture = Compiler->Texture(IndirectTexture->TileIndexTexture, EMaterialSamplerType::SAMPLERTYPE_Color);
-		int32 Index = Compiler->TextureSample(IndexTexture, IndirectUV, EMaterialSamplerType::SAMPLERTYPE_Color);
+		int32 Index = Compiler->TextureSample(IndexTexture, UV, EMaterialSamplerType::SAMPLERTYPE_Color);
 		int32 IndexX = Compiler->ComponentMask(Index, true, false, false, false);
 		int32 IndexY = Compiler->ComponentMask(Index, false, true, false, false);
 
+
+		////////////confirmed untill here
+
 		IndexX = Compiler->Div(IndexX, TileCountX);
 		IndexY = Compiler->Div(IndexY, TileCountY);
-
-		////test
-		//int32 tilecountx = Compiler->Constant(IndirectTexture->TilesetTileCount.X);
-		//int32 tilecounty = Compiler->Constant(IndirectTexture->TilesetTileCount.Y);
-		//IndexX = Compiler->Div(IndexX, tilecountx);
-		//IndexY = Compiler->Div(IndexY, tilecounty);
-		//int32 test = Compiler->AppendVector(IndexX, IndexY);
-		///// ///
 
 		int32 TileUV_X = Compiler->Fmod(VirtualUV_X, TileSizeX);
 		int32 TileUV_Y = Compiler->Fmod(VirtualUV_Y, TileSizeY);
@@ -58,8 +44,21 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 		TileUV_X = Compiler->Div(TileUV_X, TileCountX);
 		TileUV_Y = Compiler->Div(TileUV_Y, TileCountY);
 
+
+		//IndexX = Compiler->Mul(IndexX, TileSizeX);
+		//IndexY = Compiler->Mul(IndexY, TileSizeY);
+
+		//IndexX = Compiler->Mul(IndexX, IndirectTexResX);
+		//IndexY = Compiler->Mul(IndexY, IndirectTexResY);
+
+		IndexX = Compiler->Mul(IndexX, Compiler->Constant(255));
+		IndexY = Compiler->Mul(IndexY, Compiler->Constant(255));
+
+
 		int32 ResultUV_X = Compiler->Add(TileUV_X, IndexX);
 		int32 ResultUV_Y = Compiler->Add(TileUV_Y, IndexY);
+
+	
 
 		int32 ResultUV = Compiler->AppendVector(ResultUV_X, ResultUV_Y);
     	

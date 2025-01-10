@@ -19,8 +19,8 @@ void UIndirectTexture::GenerateTileIndexTexture()
     UTexture2D* tiTexture = UTexture2D::CreateTransient(width, height, PF_R8G8B8A8);
     if (!tiTexture) return;
 
-    tiTexture->Filter = TextureFilter::TF_Default;
-    tiTexture->SRGB = true;
+    tiTexture->Filter = TextureFilter::TF_Nearest;
+    tiTexture->SRGB = false;
 
 
     FTexture2DMipMap& Mip = tiTexture->PlatformData->Mips[0];
@@ -34,7 +34,11 @@ void UIndirectTexture::GenerateTileIndexTexture()
             UE_LOG(LogTemp, Warning, TEXT("Random Value for Tile: %d"), getRand);
             int idxX = getRand % TilesetTileCount.X;
             int idxY = getRand / TilesetTileCount.X;
-            Pixels[y * width + x] = FColor(idxX, idxY, 0, 0);
+            //idxX *= IndirectTextureResolution.X;
+            //idxY *= IndirectTextureResolution.Y;
+            //idxX *= TilesetTexture->GetSizeX() / TilesetTileCount.X;
+            //idxY *= TilesetTexture->GetSizeY() / TilesetTileCount.Y;
+            Pixels[y * width + x] = FColor(0, idxX, idxY,0);
         }
     }
 
