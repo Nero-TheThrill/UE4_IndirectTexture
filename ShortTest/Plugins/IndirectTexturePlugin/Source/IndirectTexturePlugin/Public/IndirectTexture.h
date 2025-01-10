@@ -5,16 +5,13 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "IndirectTexture.generated.h"
-/**
- * 
- */
+
 UCLASS()
 class INDIRECTTEXTUREPLUGIN_API UIndirectTexture : public UObject
 {
 	GENERATED_BODY()
 public:
 	UIndirectTexture();
-
 
 	UPROPERTY(EditAnywhere)
 	UTexture2D* TilesetTexture;
@@ -24,9 +21,11 @@ public:
 
     UPROPERTY(EditAnywhere)
 	FIntPoint IndirectTextureResolution;
-	UPROPERTY(EditAnywhere)
+
+	UPROPERTY(VisibleAnywhere)
 	UTexture2D* TileIndexTexture;
 
+private:
 	void GenerateTileIndexTexture();
 	void OnPropertyChanged(UObject* ObjectBeingModified, FPropertyChangedEvent& PropertyChangedEvent);
 };

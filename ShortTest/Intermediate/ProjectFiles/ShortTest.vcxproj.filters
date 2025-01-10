@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ShortTest.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C0442F19-8371-4C10-B165-D9EBBA6EF78E}</UniqueIdentifier>
+      <UniqueIdentifier>{2386FC9B-CDB4-4E50-A88C-FF9449D24CC2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShortTest.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{09702939-DF3F-4787-9729-4163FB08C7F3}</UniqueIdentifier>
+      <UniqueIdentifier>{745BCDAB-A0EA-4323-A5BE-F1655CD4C356}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -25,22 +25,22 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Plugins">
-      <UniqueIdentifier>{EBC5A81F-A64E-4B73-BFD5-CC93841F582F}</UniqueIdentifier>
+      <UniqueIdentifier>{1AF967EF-1017-4582-ACD3-76835088F156}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\IndirectTexturePlugin">
-      <UniqueIdentifier>{1A0240CD-E79C-4E29-89D6-FCA5B4548BA5}</UniqueIdentifier>
+      <UniqueIdentifier>{66D5B866-81BA-414A-BFBA-AB67CE7A5D96}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\IndirectTexturePlugin\Source">
-      <UniqueIdentifier>{37A055DC-BA59-494E-B61D-C24374723307}</UniqueIdentifier>
+      <UniqueIdentifier>{16FFF856-2A22-41B3-AA31-7D3A22B26166}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin">
-      <UniqueIdentifier>{A2702FA0-2F7B-435C-8ED1-E19062CF0B77}</UniqueIdentifier>
+      <UniqueIdentifier>{51AAC262-BAF3-4631-9632-E958B0E553C9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\IndirectTexturePlugin.Build.cs">
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin</Filter>
     </None>
     <Filter Include="Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Private">
-      <UniqueIdentifier>{EE483005-C729-455C-947A-180C0609F53D}</UniqueIdentifier>
+      <UniqueIdentifier>{3FCF00BD-E57E-444C-8731-E1CC1F65D4E3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Private\IndirectTexture.cpp">
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Private</Filter>
@@ -52,7 +52,7 @@
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Private</Filter>
     </ClCompile>
     <Filter Include="Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Public">
-      <UniqueIdentifier>{056AE21E-073A-4CC4-86C3-31A3E0575CDD}</UniqueIdentifier>
+      <UniqueIdentifier>{660D9B22-3847-406B-B185-8C7D89FE53D2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Public\IndirectTexture.h">
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePlugin\Public</Filter>
@@ -67,19 +67,19 @@
       <Filter>Plugins\IndirectTexturePlugin</Filter>
     </None>
     <Filter Include="Plugins\IndirectTexturePlugin\Resources">
-      <UniqueIdentifier>{5CF3D469-DA77-4C0C-8A42-B0873880419F}</UniqueIdentifier>
+      <UniqueIdentifier>{633587D4-683E-4BC8-BBB0-6ADFFA294A73}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\IndirectTexturePlugin\Resources\Icon128.png">
       <Filter>Plugins\IndirectTexturePlugin\Resources</Filter>
     </None>
     <Filter Include="Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor">
-      <UniqueIdentifier>{94EB7D14-D788-4F6A-A0FE-0D649734136D}</UniqueIdentifier>
+      <UniqueIdentifier>{941962F1-8A3D-4E68-848A-9FA54D4F6D30}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\IndirectTexturePluginEditor.Build.cs">
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor</Filter>
     </None>
     <Filter Include="Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Private">
-      <UniqueIdentifier>{AF268636-D184-426A-9164-25DA72B89653}</UniqueIdentifier>
+      <UniqueIdentifier>{3EDF044B-FB01-4F4F-8D98-92421E8D585E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Private\IndirectTextureActions.cpp">
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Private</Filter>
@@ -91,7 +91,7 @@
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Private</Filter>
     </ClCompile>
     <Filter Include="Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Public">
-      <UniqueIdentifier>{A62A3DE7-BDF2-4862-A1F2-55C37886AA94}</UniqueIdentifier>
+      <UniqueIdentifier>{D987ED6F-DC71-4769-97DA-26FE3A385363}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Public\IndirectTextureActions.h">
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Public</Filter>
@@ -103,7 +103,7 @@
       <Filter>Plugins\IndirectTexturePlugin\Source\IndirectTexturePluginEditor\Public</Filter>
     </ClInclude>
     <Filter Include="Source\ShortTest">
-      <UniqueIdentifier>{49E6A96D-489A-46D6-A274-9746499CFB48}</UniqueIdentifier>
+      <UniqueIdentifier>{2D5058E4-4B4E-4828-A174-7A9C6C080C39}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShortTest\ShortTest.Build.cs">
       <Filter>Source\ShortTest</Filter>

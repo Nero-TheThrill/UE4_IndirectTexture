@@ -8,12 +8,12 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 {
     if (IndirectTexture&& IndirectTexture->TileIndexTexture)
     {
-		int32 TileCountX = Compiler->Constant((float)IndirectTexture->TilesetTileCount.X);
-		int32 TileCountY = Compiler->Constant((float)IndirectTexture->TilesetTileCount.Y);
-		int32 IndirectTexResX = Compiler->Constant((float)IndirectTexture->IndirectTextureResolution.X);
-		int32 IndirectTexResY = Compiler->Constant((float)IndirectTexture->IndirectTextureResolution.Y);
-		int32 TileSizeX = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeX() / (float)(IndirectTexture->TilesetTileCount.X));
-		int32 TileSizeY = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeY() / (float)(IndirectTexture->TilesetTileCount.Y));
+		int32 TileCountX = Compiler->Constant(IndirectTexture->TilesetTileCount.X);
+		int32 TileCountY = Compiler->Constant(IndirectTexture->TilesetTileCount.Y);
+		int32 IndirectTexResX = Compiler->Constant(IndirectTexture->IndirectTextureResolution.X);
+		int32 IndirectTexResY = Compiler->Constant(IndirectTexture->IndirectTextureResolution.Y);
+		int32 TileSizeX = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeX() / IndirectTexture->TilesetTileCount.X);
+		int32 TileSizeY = Compiler->Constant(IndirectTexture->TilesetTexture->GetSizeY() / IndirectTexture->TilesetTileCount.Y);
 		int32 VTextureSizeX = Compiler->Mul(TileSizeX, IndirectTexResX);
 		int32 VTextureSizeY = Compiler->Mul(TileSizeY, IndirectTexResY);
 
@@ -28,9 +28,6 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 		int32 Index = Compiler->TextureSample(IndexTexture, UV, EMaterialSamplerType::SAMPLERTYPE_Color);
 		int32 IndexX = Compiler->ComponentMask(Index, true, false, false, false);
 		int32 IndexY = Compiler->ComponentMask(Index, false, true, false, false);
-
-
-		////////////confirmed untill here
 
 		IndexX = Compiler->Mul(IndexX, Compiler->Constant(255));
 		IndexY = Compiler->Mul(IndexY, Compiler->Constant(255));
@@ -59,18 +56,8 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 		return ResultUV;
     }
 
-    // Handle the case where no texture is set
     return Compiler->Error(TEXT("No indirect texture assigned"));
 }
-
-//UObject* UMaterialExpressionIndTexSample::GetReferencedTexture(int32 Index) const
-//{
-//	TArray<UTexture2D*> Textures;
-//	Textures.Add(IndirectTexture->UVTexture);
-//	Textures.Add(IndirectTexture->TilesetTexture);
-//	return Textures[Index];
-//	return nullptr;
-//}
 
 UObject* UMaterialExpressionIndTexSample::GetReferencedTexture() const
 {
@@ -79,35 +66,10 @@ UObject* UMaterialExpressionIndTexSample::GetReferencedTexture() const
     return nullptr;
 }
 
-//TArray<UObject*> UMaterialExpressionIndTexSample::GetReferencedTextures() const
-//{
-//	TArray<UObject*> textures;
-//	if (IndirectTexture != nullptr)
-//	{
-//		if (IndirectTexture->UVTexture != nullptr)
-//			textures.Add(IndirectTexture->UVTexture);
-//		if (IndirectTexture->TilesetTexture != nullptr)
-//			textures.Add(IndirectTexture->TilesetTexture);
-//	}
-//	return textures;
-//}
-
-//void UMaterialExpressionIndTexSample::GetReferencedTextures(TArray<UTexture*>& OutTextures) const
-//{
-//	if (IndirectTexture != nullptr)
-//	{
-//		if (IndirectTexture->UVTexture != nullptr)
-//			OutTextures.Add(IndirectTexture->UVTexture);
-//		if (IndirectTexture->TilesetTexture != nullptr)
-//			OutTextures.Add(IndirectTexture->TilesetTexture);
-//	}
-//}
-//
-//
 bool UMaterialExpressionIndTexSample::CanReferenceTexture() const
 {
    if (IndirectTexture != nullptr)
-		return (IndirectTexture->TileIndexTexture != nullptr)&&(IndirectTexture->TilesetTexture != nullptr);
+		return IndirectTexture->TileIndexTexture != nullptr;
     return false;
 }
 

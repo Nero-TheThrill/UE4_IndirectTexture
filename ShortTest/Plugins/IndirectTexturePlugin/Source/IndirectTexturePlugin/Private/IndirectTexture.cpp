@@ -8,7 +8,6 @@ UIndirectTexture::UIndirectTexture()
     TilesetTexture = nullptr;
     TilesetTileCount = FIntPoint(0, 0);
     IndirectTextureResolution = FIntPoint(0, 0);
-    GenerateTileIndexTexture();
     FCoreUObjectDelegates::OnObjectPropertyChanged.AddUObject(this, &UIndirectTexture::OnPropertyChanged);
 }
 
@@ -21,7 +20,6 @@ void UIndirectTexture::GenerateTileIndexTexture()
 
     tiTexture->Filter = TextureFilter::TF_Nearest;
     tiTexture->SRGB = false;
-
 
     FTexture2DMipMap& Mip = tiTexture->PlatformData->Mips[0];
     void* TextureData = Mip.BulkData.Lock(LOCK_READ_WRITE);
@@ -48,26 +46,7 @@ void UIndirectTexture::OnPropertyChanged(UObject* ObjectBeingModified, FProperty
 {
     if (ObjectBeingModified == this)
     {
-        FName PropertyName = (PropertyChangedEvent.Property != nullptr)
-            ? PropertyChangedEvent.Property->GetFName()
-            : NAME_None;
-
-        if (PropertyName == GET_MEMBER_NAME_CHECKED(UIndirectTexture, TilesetTexture))
-        {
-            if (TilesetTexture != nullptr)
-            {
-                //TilesetTileCount = FIntPoint(TilesetTexture->GetSizeX(), TilesetTexture->GetSizeY());
-                UE_LOG(LogTemp, Warning, TEXT("size x: %d, size y: %d"), TilesetTexture->GetSizeX(), TilesetTexture->GetSizeY());
-                GenerateTileIndexTexture();
-            }
-            else
-            {
-               // TilesetTileCount = FIntPoint(0,0);
-                UE_LOG(LogTemp, Warning, TEXT("texture removed"));
-                UE_LOG(LogTemp, Warning, TEXT("size x: %d, size y: %d"), TilesetTileCount.X, TilesetTileCount.Y);
-            }
-            UE_LOG(LogTemp, Warning, TEXT("virtual texture resolution should be: %d x %d"), IndirectTextureResolution.X * TilesetTileCount.X, IndirectTextureResolution.Y * TilesetTileCount.Y);
-        }
+        GenerateTileIndexTexture();
     }
 
 }
