@@ -255,10 +255,10 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
 /I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
 /I D:\UE4_IndirectTexture\ShortTest\Intermediate\Build\Win64\ShortTestEditor\Development\Engine
 /Yc"D:\UE4_IndirectTexture\ShortTest\Intermediate\Build\Win64\ShortTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"D:\UE4_IndirectTexture\ShortTest\Intermediate\Build\Win64\ShortTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"

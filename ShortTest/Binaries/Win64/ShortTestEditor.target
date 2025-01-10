@@ -29,6 +29,22 @@
 			"Type": "Executable"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/IndirectTexturePlugin/Binaries/Win64/UE4Editor-IndirectTexturePlugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/IndirectTexturePlugin/Binaries/Win64/UE4Editor-IndirectTexturePlugin.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/IndirectTexturePlugin/Binaries/Win64/UE4Editor-IndirectTexturePluginEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/IndirectTexturePlugin/Binaries/Win64/UE4Editor-IndirectTexturePluginEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2213,6 +2229,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/IndirectTexturePlugin/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2616,6 +2636,10 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/ShortTest.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/IndirectTexturePlugin/IndirectTexturePlugin.uplugin",
 			"Type": "UFS"
 		},
 		{
