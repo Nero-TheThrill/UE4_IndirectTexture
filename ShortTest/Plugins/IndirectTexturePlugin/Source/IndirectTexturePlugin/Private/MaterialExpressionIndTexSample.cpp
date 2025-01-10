@@ -32,8 +32,12 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 
 		////////////confirmed untill here
 
+		IndexX = Compiler->Mul(IndexX, Compiler->Constant(255));
+		IndexY = Compiler->Mul(IndexY, Compiler->Constant(255));
+
 		IndexX = Compiler->Div(IndexX, TileCountX);
 		IndexY = Compiler->Div(IndexY, TileCountY);
+
 
 		int32 TileUV_X = Compiler->Fmod(VirtualUV_X, TileSizeX);
 		int32 TileUV_Y = Compiler->Fmod(VirtualUV_Y, TileSizeY);
@@ -45,20 +49,10 @@ int32 UMaterialExpressionIndTexSample::Compile(FMaterialCompiler* Compiler, int3
 		TileUV_Y = Compiler->Div(TileUV_Y, TileCountY);
 
 
-		//IndexX = Compiler->Mul(IndexX, TileSizeX);
-		//IndexY = Compiler->Mul(IndexY, TileSizeY);
-
-		//IndexX = Compiler->Mul(IndexX, IndirectTexResX);
-		//IndexY = Compiler->Mul(IndexY, IndirectTexResY);
-
-		IndexX = Compiler->Mul(IndexX, Compiler->Constant(255));
-		IndexY = Compiler->Mul(IndexY, Compiler->Constant(255));
-
 
 		int32 ResultUV_X = Compiler->Add(TileUV_X, IndexX);
 		int32 ResultUV_Y = Compiler->Add(TileUV_Y, IndexY);
 
-	
 
 		int32 ResultUV = Compiler->AppendVector(ResultUV_X, ResultUV_Y);
     	

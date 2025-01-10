@@ -16,7 +16,7 @@ void UIndirectTexture::GenerateTileIndexTexture()
 {
     int width = IndirectTextureResolution.X;
     int height = IndirectTextureResolution.Y;
-    UTexture2D* tiTexture = UTexture2D::CreateTransient(width, height, PF_R8G8B8A8);
+    UTexture2D* tiTexture = UTexture2D::CreateTransient(width, height, PF_B8G8R8A8);
     if (!tiTexture) return;
 
     tiTexture->Filter = TextureFilter::TF_Nearest;
@@ -34,11 +34,8 @@ void UIndirectTexture::GenerateTileIndexTexture()
             UE_LOG(LogTemp, Warning, TEXT("Random Value for Tile: %d"), getRand);
             int idxX = getRand % TilesetTileCount.X;
             int idxY = getRand / TilesetTileCount.X;
-            //idxX *= IndirectTextureResolution.X;
-            //idxY *= IndirectTextureResolution.Y;
-            //idxX *= TilesetTexture->GetSizeX() / TilesetTileCount.X;
-            //idxY *= TilesetTexture->GetSizeY() / TilesetTileCount.Y;
-            Pixels[y * width + x] = FColor(0, idxX, idxY,0);
+
+            Pixels[y * width + x] = FColor(idxX, idxY, 0,0);
         }
     }
 
