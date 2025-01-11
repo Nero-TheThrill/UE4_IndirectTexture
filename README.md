@@ -54,19 +54,19 @@ With this approach, we use only the memory size of the **Index Texture**, but we
 ## Results
 
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result1.png"  width="300"/>  
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result1.png"  width="300"/>  
 
 TileCount: (4,4) IndirectTextureResolution: (8,16)  
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result2.png"  width="300"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result2.png"  width="300"/>
 
 TileCount: (8,8) IndirectTextureResolution: (8,16)
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result3.png"  width="300"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result3.png"  width="300"/>
 
 TileCount: (4,4) IndirectTextureResolution: (32,64)
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result4.png"  width="300"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/result4.png"  width="300"/>
 
 TileCount: (8,8) IndirectTextureResolution: (8,8)
 
@@ -93,7 +93,7 @@ $$
 
 * Indicates each **Tile**'s TopLeft UV. 
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/tiletopleft.png" width="600"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/tiletopleft.png" width="600"/>
 
 *  Now we need **offset** value which will be added into TopLeft UV
 
@@ -127,22 +127,22 @@ $$
 
 * Now we can use this for the **offset** value
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/uv01.png" width="600"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/uv01.png" width="600"/>
 
 ## FYI
 
 
 I noticed there is discontinuity in UV mapping between tiles at first
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/discontinuity.png" width="300"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/discontinuity.png" width="300"/>
 
 
 It seemed like large UV gap between tiles causing this. So I did a modification to both Material and Texture.
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/mipmap0.png" width="300"/> 
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/mipmap0.png" width="300"/> 
 
 First, I set the texture to use alaways mip level 0 which is full resolution.
 
-<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline4.png" width="300"/>  ⇒  <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/filter.png" width="300"/>
+<img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/filter.png" width="300"/>
 
 Also changed tileset texture filter to Nearest. Which will pick the nearest texel(means it doesn't mixing color)
