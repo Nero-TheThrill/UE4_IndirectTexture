@@ -48,7 +48,12 @@ With this approach, we use only the memory size of the **Index Texture**, but we
     If you want to test other cases like changing Tile count or Index Texture Resolution, follow <How to Test Result> 5. ~ 6.
 
 
+## Main Codes Are Here
 
+[MaterialExpressionIndTexSample](https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/ShortTest/Plugins/IndirectTexturePlugin/Source/IndirectTexturePlugin/Private/MaterialExpressionIndTexSample.cpp)
+
+
+[IndirectTexture](https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/ShortTest/Plugins/IndirectTexturePlugin/Source/IndirectTexturePlugin/Private/IndirectTexture.cpp)
 
 
 ## Results
