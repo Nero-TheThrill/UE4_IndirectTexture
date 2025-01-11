@@ -26,7 +26,7 @@ With this approach, we use only the memory size of the **Index Texture**, but we
 
 4. You won't see the result at first, because the **Tile Index Texture** isn't created yet
 
-    <img src="./MD_Img/guideline1.png" width="300"/>
+    <img src="https://github.com/Nero-TheThrill/UE4_IndirectTexture/blob/main/MD_IMG/guideline1.png" width="300"/>
 
 5. To create **Tile Index Texture**, open **PUBGIndTex**(Indirect Texture Asset)
 
