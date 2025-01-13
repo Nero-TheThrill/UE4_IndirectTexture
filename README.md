@@ -15,6 +15,15 @@ This feature allows you to render a huge texture while using minimal  memory.
  
 With this approach, we use only the memory size of the **Index Texture**, but we can render a texture with a size equivalent to **Index Texture Size** × **Tile Size**
  
+## Important Notice
+
+I didn't modified UE 4.25 Engine source code in this project.
+
+But I made another version that **MODIFIED ENGINE SOURCE CODE**.
+
+Pleae check [Repo here](https://github.com/Nero-TheThrill/UE4_ShortTest/commit/8fa07c8a2f4c7600458367c2283baa7c40948f2e)
+ 
+It uses all same methods of Indirect Texture so I think you are okay to review this one.
 
 ## How to Test Result
 
