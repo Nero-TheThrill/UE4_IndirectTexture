@@ -23,7 +23,9 @@ But I made another version that **MODIFIED ENGINE SOURCE CODE**.
 
 Pleae check [Repo here](https://github.com/Nero-TheThrill/UE4_ShortTest/commit/8fa07c8a2f4c7600458367c2283baa7c40948f2e)
 
-There are some missing files. To build the repo above, you'll need to build engine from the original branch and copy&paste **Engine** folder.
+There are some missing files.
+
+To build the repo above, you'll need to build engine from the original branch and copy&paste **Engine** folder. (Skip files that already exists)
  
 It uses all same methods of Indirect Texture so I think you are okay to review this one.
 
